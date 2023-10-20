@@ -1,21 +1,52 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>My Weekly Schedule</title>
     <style>
         table {
             width: 100%;
+            max-width: 800px; /* Set a maximum width for the table */
             border-collapse: collapse;
+            margin: 0 auto; /* Center the table on the page */
         }
+
         th, td {
             border: 1px solid #ddd;
             text-align: center;
-            padding: 8px;
+            padding: 12px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Make the table responsive for smaller screens */
+        @media (max-width: 600px) {
+            table {
+                width: 100%;
+                max-width: 100%;
+                overflow-x: auto; /* Add horizontal scrolling on smaller screens */
+            }
         }
     </style>
 </head>
+
 <body>
-    <h1>My Weekly Schedule</h1>
+     <h1>My Weekly Schedule</h1>
     <table>
         <tr>
             <th>Time</th>
@@ -169,4 +200,5 @@
         </tr>
     </table>
 </body>
+
 </html>
